@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <h1 style="text-align: center;">JS - Reg Form</h1>
+    <form name="frmSample">
+        <p style="text-align: center;">
+            <input type="text" name="txtPname"  placeholder="Enter Person Name" />
+            <br /><br />
+            <label>Gender</label><br />
+            <input type="radio" name="rdoGender" value="Male" />
+            <label>Male</label> &nbsp;&nbsp;&nbsp;
+            <input type="radio" name="rdoGender" value="Female" />
+            <label>Female</label>
+            <br /><br />
+            <label>Location</label><br />
+             <select  name="ddlLoc">
+                <option  value="-1">Select Ur City</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Amaravathi">Amaravathi</option>
+                <option value="Bangalore">Bangalore</option>
+            </select>
+             <br /><br />
+            <input type="button"  value="Register" onclick="GetDetails()" />
+            
+        </p>
+    </form>
+    <h2 style="text-align: center;" id="resinfo"></h2>
+
+    <script type="text/javascript">
+        function GetDetails()
+        {
+
+            let pname = frmSample.txtPname.value;
+            if(pname!="")
+            {
+            let gender = frmSample.rdoGender.value;
+            if(gender!="")
+            {
+            let loc = frmSample.ddlLoc.value;
+            let res = "";
+            if(loc!="-1")
+            {
+               res += "Person Name : " + pname + "<br />"; 
+               res += "Person Gender : " + gender + "<br />";
+               res += "Person Location : " + loc + "<br />";
+               document.getElementById("resinfo").innerHTML =res;
+            }
+            else
+                alert("Select City");
+        }
+        else
+        alert("Please select gender");
+    }    
+        else
+            alert("Enter Person name");
+            
+        }
+
+    </script>
+</body>
+</html>

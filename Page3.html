@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <h1 style="text-align: center;">JS - TextBox Demo</h1>
+    <form name="frmSample">
+        <p style="text-align: center;">
+            <input type="text" name="txtVal1"  placeholder="Enter any value" />
+            <br /><br />
+            <input type="text" name="txtVal2"  placeholder="Enter any value" />
+            <br /><br />
+            <input type="button"  value="Addition" onclick="AddFun()" />
+            <input type="button"  value="Reset" onclick="ClearForm()" />
+        </p>
+    </form>
+    <h2 style="text-align: center;" id="resinfo"></h2>
+
+    <script type="text/javascript">
+        function AddFun()
+        {
+            let v1 = parseFloat(frmSample.txtVal1.value);
+            let v2 = parseFloat(frmSample.txtVal2.value);
+            let sum = v1+v2;
+            document.getElementById("resinfo").innerHTML = "Addition Value : " + sum;
+        }
+
+        function  ClearForm()
+        {
+            frmSample.txtVal1.value = "";
+            frmSample.txtVal2.value = "";
+            document.getElementById("resinfo").innerHTML = "";
+        }
+    </script>
+</body>
+</html>

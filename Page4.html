@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <h1 style="text-align: center;">JS - Radio Button Demo</h1>
+    <form name="frmSample">
+        <p style="text-align: center;">
+            <label>Type of Payments</label><br /><br />
+            <input type="radio" name="rdoBank" value="DC" onchange="getPayment()" />
+            <label>Debit Card</label>
+             <input type="radio" name="rdoBank" value="CC"  onchange="getPayment()" />
+            <label>Credit Card</label>
+             <input type="radio" name="rdoBank" value="NB"  onchange="getPayment()" />
+            <label>Net Banking</label>
+        </p>
+    </form>
+<h2 style="text-align: center;" id="resinfo"></h2>
+    <script type="text/javascript">
+        function getPayment()
+        {
+            let payment = frmSample.rdoBank.value;
+            
+            let res = "";
+            
+            if(payment=="DC")
+                res = "Ur Payment is Debit Card";
+
+            if(payment=="CC")
+                res = "Ur Payment is Credit Card";
+
+           if(payment=="NB")
+                res = "Ur Payment is Net Banking";
+
+                document.getElementById("resinfo").innerHTML = res;
+        }
+    </script>
+</body>
+</html>
