@@ -3,15 +3,21 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './Home'
-function App() {
-  const [count, setCount] = useState(0)
+import Login from './Login'
+import Child from './Child'
 
+function App() {
+  
+  let loc = "Hyderabad";
   return (
     <>
-      <h1>Hello World</h1>
-      <h2>React App</h2>
-      <h1>Page Update</h1>
+      
       <Home />
+      <hr />
+      <Login />
+      <hr />
+      <Child pname="Phani Kumar"  age="25"  location={loc} />
+
     </>
   )
 }
