@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "2",
+      "name": "James Robin",
+      "email": "james@gmail.com"
+    },
+    {
+      "id": "3",
+      "name": "Romeo Juliet",
+      "email": "romeo@yahoo.com"
+    }
+  ],
+  "employee": [
+    {
+      "id": "101",
+      "ename": "Murali",
+      "job": "Manager",
+      "salary": 12000
+    },
+    {
+      "id": "102",
+      "ename": "Murari",
+      "job": "Developer",
+      "salary": 10000
+    }
+  ]
+}
