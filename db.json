@@ -13,16 +13,28 @@
   ],
   "employee": [
     {
-      "id": "101",
-      "ename": "Murali",
-      "job": "Manager",
-      "salary": 12000
+      "id": "123",
+      "ename": "Phani",
+      "job": "Developer",
+      "salary": "120000"
     },
     {
-      "id": "102",
-      "ename": "Murari",
-      "job": "Developer",
-      "salary": 10000
+      "id": "167",
+      "ename": "Kiran Kumar",
+      "job": "Tester",
+      "salary": "10001"
+    },
+    {
+      "id": "178",
+      "ename": "Devi",
+      "job": "Counseller",
+      "salary": "13000"
+    },
+    {
+      "id": "657",
+      "ename": "Chandana",
+      "job": "Trainer",
+      "salary": "26000"
     }
   ]
 }
