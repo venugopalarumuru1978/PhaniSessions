@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context 
+    					   http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+                           
+<context:annotation-config />
+
+<!--  setter DI with injecting one class object into another class -->
+<bean id ="acc1"  class="com.beans.Account">
+	<property name="AccNo" value="Acc001"/>
+	<property name="BankName"  value="SBI" />
+</bean>
+
+<bean id ="acc2"  class="com.beans.Account">
+	<property name="AccNo" value="Acc002"/>
+	<property name="BankName"  value="YES" />
+</bean>
+
+<bean id="empObj"  class="com.beans.Employee">
+	<property name="ename" value="Ravindra"/>
+	<property name="job"  value="Developer" />
+	<property name="sal"  value="12000.00" />
+</bean>
+
+
+<bean id="cur1" class="com.beans.Course">
+	<constructor-arg  name="cname" value="java"/>
+	<constructor-arg  name="fees" value="15000.00"/>
+</bean>
+
+<bean id="cur2" class="com.beans.Course">
+	<constructor-arg  name="cname" value="react"/>
+	<constructor-arg  name="fees" value="25000.00"/>
+</bean>
+
+<bean id="stdObj"  class="com.beans.Student">
+	<constructor-arg name="sname" value="Jagan Mohan Reddy"/>
+</bean>
+
+</beans>
