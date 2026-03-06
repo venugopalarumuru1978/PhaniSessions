@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+ 	<class name="coms.entities.Cricket" table="cric_info">  
+    <id name="crno"> <!-- Primary key -->  
+     	<generator class="assigned"></generator>  
+    </id>
+    
+    <property name="crname" column="c_name"/>  
+    <property name="game" />
+    <property name="runs" />  
+  </class>
+</hibernate-mapping>
