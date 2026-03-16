@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    <h1 style="text-align: center;">JS - Radio Button Demo</h1>
+    <form name="frmSample">
+        <p style="text-align: center;">
+            <label>Show Images</label><br /><br />
+            <input type="radio" name="rdoImg" value="D:\FrontEndSessions\pic1.jpg" onchange="getPic()" />
+            <label>Pic-1</label>
+            <input type="radio" name="rdoImg" value="D:\FrontEndSessions\pic2.jpg" onchange="getPic()" />
+            <label>Pic-1</label>
+        </p>
+    </form>
+    <p  id="respic"></p>
+
+    <script type="text/javascript">
+        function getPic()
+        {
+            let pic = frmSample.rdoImg.value;
+            
+         
+            let addImg = "<img src='" + pic + "' width='100%' height='300px' />";
+            document.getElementById("respic").innerHTML = addImg;
+        }
+    </script>
+</body>
+</html>

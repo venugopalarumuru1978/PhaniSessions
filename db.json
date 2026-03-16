@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": "2",
+      "name": "James Robin",
+      "email": "james@gmail.com"
+    },
+    {
+      "id": "3",
+      "name": "Romeo Juliet",
+      "email": "romeo@yahoo.com"
+    }
+  ],
+  "employee": [
+    {
+      "id": "123",
+      "ename": "Phani",
+      "job": "Developer",
+      "salary": "120000"
+    },
+    {
+      "id": "167",
+      "ename": "Kiran Kumar",
+      "job": "Tester",
+      "salary": "10001"
+    },
+    {
+      "id": "178",
+      "ename": "Devi",
+      "job": "Counseller",
+      "salary": "13000"
+    },
+    {
+      "id": "657",
+      "ename": "Chandana",
+      "job": "Trainer",
+      "salary": "26000"
+    }
+  ]
+}
